@@ -7,7 +7,6 @@ public class User {
 	private int accountNumber;
 	private String username;
 	private String password;
-	
 	private String name;
 	private List<Account> accountList;
 	public User() {
@@ -22,6 +21,7 @@ public class User {
 		this.name = name;
 		this.accountList = accountList;
 	}
+	
 	public int getAccountNumber() {
 		return accountNumber;
 	}
@@ -31,8 +31,9 @@ public class User {
 	public String getUsername() {
 		return username;
 	}
-	public void setUsername(String username) {
+	public String setUsername(String username) {
 		this.username = username;
+		return username;
 	}
 	public String getPassword() {
 		return password;
@@ -56,6 +57,14 @@ public class User {
 	public String toString() {
 		return "User [accountNumber=" + accountNumber + ", username=" + username + ", password=" + password + ", name="
 				+ name + ", accountList=" + accountList + "]";
+	}
+	public void setUsername(User selectUserByUsername) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setPassword(User selectUserByUsername) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	
